@@ -14,7 +14,6 @@ class GuzzleHttpClient implements HttpClient
 
     public function sendGet(string $url)
     {
-        echo 'Hello from Guzzle' . PHP_EOL;
         return (string)$this->client->get($url)->getBody();
     }
 }

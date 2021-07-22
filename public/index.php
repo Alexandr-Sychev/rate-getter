@@ -6,7 +6,7 @@ use App\Core\ServiceLocator;
 
 $serviceLocator = new ServiceLocator();
 
-$rateGetter = $serviceLocator->getService('App\Services\RateGetter\XmlRateGetter');
+$rateGetter = $serviceLocator->getService('App\Interfaces\RateGetter');
 
 $dollarRate = $rateGetter->getDollar();
 

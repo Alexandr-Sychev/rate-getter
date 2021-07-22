@@ -50,10 +50,10 @@ class ServiceLocator
 
         if (!$classInfo) {
             $classInfo = ['class' => $className];
-        }
-
-        if (!$this->classInfoIsValid($classInfo)) {
-            throw new Exception('Class was not resolved');
+        } else {
+            if (!$this->classInfoIsValid($classInfo)) {
+                throw new Exception('Class was not resolved');
+            }
         }
 
         return $classInfo;
