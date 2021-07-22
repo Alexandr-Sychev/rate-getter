@@ -1,0 +1,11 @@
+{
+    "name": "alx-sychev/rate-getter",
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    }
+}
